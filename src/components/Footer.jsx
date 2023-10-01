@@ -1,7 +1,11 @@
 import React from 'react'
 import Logo from '../assets/Logo2.webp'
+import { useNavigate } from 'react-router-dom'
 
 export default function Footer() {
+
+    const navigate = useNavigate()
+
   return (
     <div className='w-full bg-dark px-5 pt-3 mb-1'>
         <div className='flex gap-5'>
@@ -9,13 +13,13 @@ export default function Footer() {
             <div className='flex flex-col justify-center'>
                 <h6 className='text-light font-semibold'>Site map:</h6>
                 <div className='flex gap-5'>
-                    <h6 className='text-light text-sm'>Home</h6>
+                    <button className='text-light text-sm'>Home</button>
                     <h6 className='text-light text-sm'>|</h6>
-                    <h6 className='text-light text-sm'>Menu</h6>
+                    <button className='text-light text-sm' onClick={() => navigate('/menu')}>Menu</button>
                     <h6 className='text-light text-sm'>|</h6>
-                    <h6 className='text-light text-sm'>Products</h6>
+                    <button className='text-light text-sm'>Products</button>
                     <h6 className='text-light text-sm'>|</h6>
-                    <h6 className='text-light text-sm'>About Us</h6>
+                    <button className='text-light text-sm'>About Us</button>
                 </div>
             </div>
         </div>
