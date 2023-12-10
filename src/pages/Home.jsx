@@ -1,6 +1,11 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import Hero1 from '../assets/img/Carousel.webp'
+import Prod1 from '../assets/img/products/Rectangle3.webp'
+import Prod2 from '../assets/img/products/Rectangle4.webp'
+import Prod3 from '../assets/img/products/Rectangle5.webp'
+import Prod4 from '../assets/img/products/Rectangle6.webp'
 import { useNavigate } from 'react-router-dom'
 
 export default function Home() {
@@ -15,11 +20,9 @@ export default function Home() {
 
     <body>
         {/* Hero Banner Start */}
-        <div className='flex justify-center w-full h-96 bg-primary'>
+        <div className='flex justify-center w-full bg-primary'>
             <div className='flex flex-col justify-center'>
-                <h1>
-                    Banner Goes Here
-                </h1>
+                <img src={Hero1} alt="Hero-Banner-1" />
             </div>
         </div>
         {/* Hero Banner End */}
@@ -32,21 +35,26 @@ export default function Home() {
                     <button className='text-light' onClick={() => navigate('/menu')}>View more</button>
                 </div>
             </div>
-            <div className='flex justify-between mt-5'>
-                <div className='w-52 h-52 bg-secondary'>
-                    <h1> Image Goes Here </h1>
+            <div className='flex justify-between gap-6 mt-5'>
+                <div>
+                    <a href="#">
+                        <img src={Prod1} alt=""  className='rounded-md'/>
+                    </a>
                 </div>
-                <div className='w-52 h-52 bg-secondary'>
-                    <h1> Image Goes Here </h1>
+                    <div>
+                    <a href="#">
+                        <img src={Prod2} alt=""  className='rounded-md'/>
+                    </a>
                 </div>
-                <div className='w-52 h-52 bg-secondary'>
-                    <h1> Image Goes Here </h1>
+                <div>
+                    <a href="#">
+                        <img src={Prod3} alt="" className='rounded-md'/>
+                    </a>
                 </div>
-                <div className='w-52 h-52 bg-secondary'>
-                    <h1> Image Goes Here </h1>
-                </div>
-                <div className='w-52 h-52 bg-secondary'>
-                    <h1> Image Goes Here </h1>
+                <div>
+                    <a href="#">
+                        <img src={Prod4} alt="" className='rounded-md'/>
+                    </a>
                 </div>
             </div>
         </div>
@@ -85,10 +93,10 @@ export default function Home() {
             <div className='pl-20 py-7 w-2/5' >
                 <h1 className='text-3xl text-light font-semibold'>See Our Latest Products</h1>
                 <p className='text-light mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo euismod, maximus purus id, dictum augue. Donec ornare tortor nulla, sollicitudin laoreet purus suscipit et. In pretium et ex quis pulvinar. Praesent in nisi purus. Pellentesque purus purus, euismod quis mauris vitae, posuere venenatis purus. Duis tincidunt est orci, a porta ex commodo id.</p>
-                <button className='bg-secondary py-1 px-2 rounded mt-4'>See Products</button>
+                <button className='bg-secondary py-1 px-2 rounded mt-4 text-light font-semibold'>See Products</button>
             </div>
             <div className='bg-secondary w-1/2 my-7 rounded-l-xl'>
-                hehehe 2
+                Image Goes Here
             </div>
         </div>
         {/* Promotional Space End */}

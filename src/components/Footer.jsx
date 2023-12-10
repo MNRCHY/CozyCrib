@@ -1,6 +1,6 @@
 import React from 'react'
-import Logo from '../assets/Logo2.webp'
-import { useNavigate } from 'react-router-dom'
+import Logo from '../assets/img/Logo2.webp'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function Footer() {
 
@@ -24,7 +24,7 @@ export default function Footer() {
             </div>
         </div>
         <div className='flex justify-center'>
-                <h6 className='text-light text-xs mb-3 opacity-50'>All Rigths Reserved | Moechtar Wira | 2023</h6>
+                <div className='text-light text-xs mb-3 opacity-50'>All Rigths Reserved | <Link to={''}>Moechtar Wira</Link> | 2023</div>
         </div>
     </div>
   )

@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/Logo2.webp'
+import Logo from '../assets/img/Logo2.webp'
 import { useNavigate } from 'react-router-dom'
 
 export default function NavBar() {
