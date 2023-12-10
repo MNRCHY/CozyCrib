@@ -13,13 +13,13 @@ export default function Footer() {
             <div className='flex flex-col justify-center'>
                 <h6 className='text-light font-semibold'>Site map:</h6>
                 <div className='flex gap-5'>
-                    <button className='text-light text-sm'>Home</button>
+                    <button className='text-light text-sm' onClick={() => navigate('/')}>Home</button>
                     <h6 className='text-light text-sm'>|</h6>
                     <button className='text-light text-sm' onClick={() => navigate('/menu')}>Menu</button>
                     <h6 className='text-light text-sm'>|</h6>
-                    <button className='text-light text-sm'>Products</button>
+                    <button className='text-light text-sm' onClick={() => navigate('/products')}>Products</button>
                     <h6 className='text-light text-sm'>|</h6>
-                    <button className='text-light text-sm'>About Us</button>
+                    <button className='text-light text-sm' onClick={() => navigate('#')}>About Us</button>
                 </div>
             </div>
         </div>

@@ -14,10 +14,10 @@ export default function NavBar() {
         <div className='flex flex-col justify-center'>
             <div className='flex justify-between gap-32'>
                 <div className='flex gap-10'>
-                    <button className='text-light'>Home</button>
+                    <button className='text-light' onClick={() => navigate('/')}>Home</button>
                     <button className='text-light' onClick={() => navigate('/menu')}>Menu</button>
-                    <button className='text-light'>Products</button>
-                    <button className='text-light'>About Us</button>
+                    <button className='text-light' onClick={() => navigate('/products')}>Products</button>
+                    <button className='text-light' onClick={() => navigate('#')}>About Us</button>
                 </div>
                 <div className='flex gap-5'>
                     <button className=' text-primary'>Sign In</button>
